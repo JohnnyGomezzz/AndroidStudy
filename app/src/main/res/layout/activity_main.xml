@@ -1,18 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/hello_world_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="#ffee66"
+        android:gravity="center"
+
+        android:padding="12dp"
+
+        android:text="Hello World!"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/press_me_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Press me!" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+    <Switch
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Убрать календарь"
+        />
+
+    <CheckBox
+        android:id="@+id/check_me_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check me!" />
+
+    <EditText
+        android:id="@+id/operand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="numberDecimal"
+        android:hint="введите первое слагаемое"
+        />
+
+    <!--
+
+    Параметр ems означает сколько букв m влезет :)
+
+    -->
+
+    <EditText
+        android:id="@+id/operand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="numberDecimal"
+        android:hint="введите второе слагаемое"
+        />
+
+    <Button
+        android:id="@+id/calc_button_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сумма" />
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="visible"
+        android:background="#55ffccee"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#55ee77"
+        android:textOff="включить"
+        android:textOn="выключить"
+        />
+
+</LinearLayout>
