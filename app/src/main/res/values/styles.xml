@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_grey">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="button_light_grey">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#DCDCDC</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="button_orange">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#FFC966</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="button_dark_orange">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#FFA600</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+</resources>
