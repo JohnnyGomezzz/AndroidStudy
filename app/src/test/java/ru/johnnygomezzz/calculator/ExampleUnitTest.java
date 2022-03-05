@@ -1,4 +1,4 @@
-package ru.johnnygomezzz.hello;
+package ru.johnnygomezzz.calculator;
 
 import org.junit.Test;
 

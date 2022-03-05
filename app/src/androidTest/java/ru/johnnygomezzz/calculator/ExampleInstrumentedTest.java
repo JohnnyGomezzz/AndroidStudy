@@ -1,4 +1,4 @@
-package ru.johnnygomezzz.hello;
+package ru.johnnygomezzz.calculator;
 
 import android.content.Context;
 
